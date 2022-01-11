@@ -1,0 +1,15 @@
+[alias]
+	# short aliases
+	st = status 
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	lg = log -p
+[color]
+	ui = auto
+[user]
+	name = lilpastel
+	email = quiz@kakao.com
+[init]
+	defaultBranch = main
