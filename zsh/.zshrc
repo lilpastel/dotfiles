@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/pastel/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,7 +102,6 @@ source $ZSH/oh-my-zsh.sh
 alias brew='arch -x86_64 /usr/local/bin/brew'
 alias brew='arch -x86_64 /usr/local/bin/brew'
 alias brew='arch -x86_64 /usr/local/bin/brew'
-alias gaiad="/Users/pastel/gaia/build/gaiad"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
