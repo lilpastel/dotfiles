@@ -1,15 +1,9 @@
-[alias]
-	# short aliases
-	st = status 
-	co = checkout
-	ci = commit
-	br = branch
-	df = diff
-	lg = log -p
-[color]
-	ui = auto
+# This is Git's per-user configuration file.
 [user]
-	name = lilpastel
+	name = jiwon
 	email = quiz@kakao.com
+# Please adapt and uncomment the following lines:
+#	name = lilpastel
+#	email = quiz@kakao.com
 [init]
 	defaultBranch = main
