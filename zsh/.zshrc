@@ -70,7 +70,6 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,10 +98,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias brew='arch -x86_64 /usr/local/bin/brew'
-alias brew='arch -x86_64 /usr/local/bin/brew'
-alias brew='arch -x86_64 /usr/local/bin/brew'
+ plugins=(
+    autojump
+    zsh-syntax-highlighting
+    zsh-completions
+    zsh-autosuggestions
+)
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# auto-suggestion on
+source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+alias ls="lsd --no-symlink"
+alias ll="lsd -l --no-symlink"
+alias lt="lsd --tree --no-symlink"
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+
+autoload -U compinit && compinit
